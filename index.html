@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f9f9f9;
+        }
+        #show {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+        .recipe-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 12px;
+            width: 320px;
+            padding: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s;
+        }
+        .recipe-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+        }
+        .recipe-card img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            background-color: #acacac;
+        }
+        .recipe-card h1 {
+            font-size: 1.4rem;
+            margin: 12px 0 8px 0;
+            color: #222;
+        }
+        .recipe-card p {
+            margin: 6px 0;
+            color: #555;
+            font-size: 0.95rem;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Recipes</h1>
+    <div id="show">
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
